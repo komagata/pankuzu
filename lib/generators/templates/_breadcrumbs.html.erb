@@ -2,7 +2,7 @@
 <ol class="breadcrumbs">
 <% breadcrumbs.each do |breadcrumb| %>
   <li class="breadcrumb">
-    <%= link_to_if breadcrumbs.last != breadcrumb, breadcrumb.name, breadcrumb.url %>
+    <%= link_to breadcrumb.name, breadcrumb.url %>
   </li>
 <% end %>
 </ol>
