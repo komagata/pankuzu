@@ -1,0 +1,9 @@
+<% if breadcrumbs.present? %>
+<ol class="breadcrumbs">
+<% breadcrumbs.each do |breadcrumb| %>
+  <li class="breadcrumb">
+    <%= link_to_if breadcrumbs.last != breadcrumb, breadcrumb.name, breadcrumb.url %>
+  </li>
+<% end %>
+</ol>
+<% end %>
