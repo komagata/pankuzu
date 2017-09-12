@@ -18,7 +18,7 @@ app/views/posts/show.html.erb:
 <%
 add_breadcrumb "Home",          root_path
 add_breadcrumb "Listing Posts", posts_path
-add_breadcrumb "A Post",        post_path(@post)
+add_breadcrumb "A Post",        @post
 %>
 ```
 
@@ -28,7 +28,7 @@ add_breadcrumb "A Post",        post_path(@post)
 <ol class="breadcrumbs">
   <li class="breadcrumb"><a href="/">Home</a></li>
   <li class="breadcrumb"><a href="/posts">Listing Posts</a></li>
-  <li class="breadcrumb">A Post</li>
+  <li class="breadcrumb"><a href="/posts/12345">A Post<a></a></li>
 </ol>
 ```
 
