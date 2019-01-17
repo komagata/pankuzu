@@ -42,7 +42,7 @@ gem "pankuzu"
 
 And then execute:
 ```bash
-$ rails genarate pankuzu:install
+$ rails generate pankuzu:install
 ```
 
 This generator creates `_breadcrumbs.html.erb` in `app/views/application` directory.
